@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imagelogin"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/loginimg" />
+
+    <View
+        android:id="@+id/viewlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp"
+        android:layout_below="@id/imagelogin"
+        android:background="@color/colorGreen" />
+
+    <TextView
+        android:id="@+id/loginid"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/viewlogin"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/userid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:ignore="UnknownId" />
+
+    <EditText
+
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/loginid" />
+
+    <TextView
+        android:id="@+id/passwd"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/login"
+        android:layout_marginTop="15dp"
+        android:text="@string/passwd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/passwd" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password"
+        android:onClick="LOGIN"
+        android:background="@drawable/ic_launcher_background"
+        android:text="@string/Button1"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/Newuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonlogin"
+        android:layout_marginTop="15dp"
+        android:text="@string/frgtpass"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/Red1"
+        tools:ignore="UnknownId" />
+
+
+</RelativeLayout>

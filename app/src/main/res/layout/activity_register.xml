@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Mediumaquamarine"
+    tools:context=".Register">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/Registration"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorBlack"
+        android:textSize="28sp"
+         />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:background="@color/White">
+
+    <TextView
+        android:id="@+id/RegName"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/lemon"
+        android:text="@string/namereg"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+        <EditText
+
+            android:id="@+id/Regnamefill"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RegName"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/button_view" />
+
+
+    <TextView
+        android:id="@+id/RegDOB"
+        android:layout_width="275dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Regnamefill"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lemon"
+        android:text="Date Of Birth"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+        <!--<DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="calendar"/>-->
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/dob_et"
+        android:focusable="false"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_action_date"
+        android:layout_width="275dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/button_view"
+        android:inputType="date"
+        android:layout_below="@id/RegDOB"
+        />
+
+        <TextView
+            android:id="@+id/Regaadhar"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dob_et"
+            android:layout_marginStart="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lemon"
+            android:text="Aadhar Number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Regaadharfill"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/ic_action_adhar"
+            android:layout_marginEnd="5dp"
+            android:inputType="phone"
+            android:background="@drawable/button_view"
+            android:layout_below="@id/Regaadhar" />
+
+
+        <TextView
+            android:id="@+id/Regdistrict"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Regaadharfill"
+            android:layout_marginStart="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lemon"
+            android:text="District"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+
+        <Spinner
+            android:id="@+id/spinnerdistrict"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_view"
+            android:layout_width="275dp"
+            android:layout_below="@id/Regdistrict"
+            android:layout_height="25dp"/>
+
+        <TextView
+        android:id="@+id/Regadd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerdistrict"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/lemon"
+        android:text="@string/address"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <EditText
+
+        android:id="@+id/Regaddfill"
+        android:layout_width="275dp"
+        android:drawableLeft="@drawable/ic_action_address"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="5dp"
+        android:inputType="text"
+        android:background="@drawable/button_view"
+        android:layout_below="@id/Regadd" />
+
+    <TextView
+        android:id="@+id/Regphone"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Regaddfill"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/lemon"
+        android:text="Phone Number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Regphonefill"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/Regphone"
+        android:background="@drawable/button_view"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:inputType="phone" />
+
+
+    <EditText
+        android:id="@+id/Regemail"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/button_view"
+        android:layout_below="@id/Regphonefill" />
+
+
+
+
+    <TextView
+        android:id="@+id/Reglandacre"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Regemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/lemon"
+        android:text="No of Acres of Land"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Reglandacrefill"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:inputType="number"
+        android:background="@drawable/button_view"
+        android:layout_below="@id/Reglandacre"
+        />
+
+    <TextView
+        android:id="@+id/Regcropcult"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Reglandacrefill"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/lemon"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Crop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Regcropcultfill"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="5dp"
+        android:inputType="text"
+        android:background="@drawable/button_view"
+        android:layout_below="@id/Regcropcult"
+        />
+
+
+    <TextView
+        android:id="@+id/Regcultfrom"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Regcropcultfill"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/lemon"
+        android:text="Cultivation Period(From)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Regcultfromfill"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:inputType="text"
+        android:background="@drawable/button_view"
+        android:layout_below="@id/Regcultfrom"
+        />
+
+
+        <TextView
+            android:id="@+id/Regcultend"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Regcultfromfill"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/lemon"
+            android:text="Cultivation Period(End)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Regcultendfill"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:inputType="text"
+            android:background="@drawable/button_view"
+            android:layout_below="@id/Regcultend"
+            />
+
+        <Button
+            android:id="@+id/buttonreg"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/Regcultendfill"
+            android:background="@drawable/ic_launcher_background"
+            android:onClick="REGISTER"
+            android:text="@string/register"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            tools:ignore="ObsoleteLayoutParam,OnClick" />
+</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

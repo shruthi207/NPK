@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nitro">
+
+    <TextView
+        android:id="@+id/textnitro1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/Green"
+        android:text="@string/nitro"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <!-- <TextView
+         android:id="@+id/textnitrores"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+         android:layout_below="@id/textnitro1"/>-->
+
+    <TextView
+        android:id="@+id/textnitrores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        android:layout_below="@id/textnitro1"/>
+
+
+    <TextView
+        android:id="@+id/textnitro2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textnitrores"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/RangeNitro"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/textnitro3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textnitro2"
+        android:layout_marginStart="10dp"
+        android:text="Low\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020     Less than 240 kg/ha"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <!--
+    <TextView
+        android:id="@+id/textnitro4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textnitro3"
+        android:layout_marginStart="10dp"
+        android:text="@string/Fifthtext"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />-->
+
+    <TextView
+        android:id="@+id/textnitro5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textnitro3"
+        android:layout_marginStart="10dp"
+        android:text="Medium \u0020\u0020\u0020\u0020\u0020\u0020\u0020 240-480 kg/ha"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <!--
+    <TextView
+        android:id="@+id/textnitro6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textnitro5"
+        android:layout_marginStart="10dp"
+        android:text="@string/sixthtxt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />-->
+
+
+    <TextView
+        android:id="@+id/textnitro7"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textnitro5"
+        android:layout_marginStart="10dp"
+        android:text="High \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020      Greater than 480 kg/ha"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <!--
+    <TextView
+        android:id="@+id/textnitro8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textnitro7"
+        android:layout_marginStart="10dp"
+        android:text="@string/seventhtext"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />-->
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/textnitro7"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/nitroplant" />
+
+    <TextView
+        android:id="@+id/textnitro9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:justificationMode="inter_word"
+        android:text="@string/textnitro9"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+</RelativeLayout>
+
